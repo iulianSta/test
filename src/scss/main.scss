@@ -23,15 +23,26 @@ h1 {
   border: yellowgreen 1px solid;
 }
 .primary {
+  font-family: var(--lobster);
+  color: beige;
   margin-bottom: 1rem;
-  animation: slide-to-right 5s ease-in-out infinite alternate-reverse both;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: slide-to-right 5s ease-in-out infinite alternate both;
   transition: 0.5s;
 }
 @keyframes slide-to-right {
   0% {
     transform: translateX(0);
   }
+  50% {
+    color: turquoise;
+    font-size: 2.5rem;
+  }
   100% {
+    color: silver;
+    font-size: 2rem;
     transform: translateX(91.6vw);
   }
 }
