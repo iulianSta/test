@@ -1,3 +1,18 @@
+body {
+  background-color: purple;
+}
 
+h1 {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: whitesmoke;
+  text-align: center;
+}
+
+.primary,
+.secondary {
+  width: 10rem;
+  height: 10rem;
+  border: yellowgreen 1px solid;
+}
 
 /*# sourceMappingURL=main.css.map */
