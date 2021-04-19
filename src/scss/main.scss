@@ -1,31 +1,25 @@
 @import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-:root {
-  --lobster: "Lobster", "cursive", sans-serif;
-  --verdana: Verdana, Geneva, Tahoma, sans-serif;
-}
+@import "./var/variables";
+@import "./page-setup";
+
 body {
   background-color: purple;
 }
 h1 {
-  font-family: var(--lobster);
+  font-family: $lobster;
   font-size: 5rem;
-  color: whitesmoke;
+  color: $smoke;
   text-align: center;
 }
 .primary,
 .secondary {
   width: 10rem;
   height: 10rem;
-  border: yellowgreen 1px solid;
+  border: $y-green 1px solid;
 }
 .primary {
-  font-family: var(--lobster);
-  color: beige;
+  font-family: $lobster;
+  color: $beige;
   margin-bottom: 1rem;
   display: flex;
   justify-content: center;
@@ -39,12 +33,12 @@ h1 {
     transform: translateX(0);
   }
   50% {
-    color: turquoise;
+    color: $turquoise;
     font-size: 2.5rem;
     border-radius: 50%;
   }
   100% {
-    color: silver;
+    color: $silver;
     font-size: 2rem;
     transform: translateX(91.6vw);
   }
@@ -54,7 +48,7 @@ h1 {
   div {
     width: 5rem;
     height: 5rem;
-    border: whitesmoke 2px solid;
+    border: $smoke 2px solid;
     border-radius: 50%;
     animation: slide-around 5s ease-in-out infinite alternate;
   }
