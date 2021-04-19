@@ -4,5 +4,5 @@
 }
 // Body style
 body {
-  background-color: $purple;
+  @include bg-color(pur);
 }

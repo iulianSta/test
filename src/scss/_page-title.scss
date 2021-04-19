@@ -2,6 +2,6 @@
 h1 {
   font-family: $lobster;
   font-size: 5rem;
-  color: $smoke;
+  @include color(smoke);
   text-align: center;
 }

@@ -23,13 +23,13 @@
 }
 // Borders
 @mixin first-b-template {
-  border: $y-green 1px solid;
+  border: $colors(y-green) 1px solid;
 }
 @mixin second-b-template {
-  border: $smoke 2px solid;
+  border: color(smoke) 2px solid;
 }
 @mixin third-b-template {
-  border: $turquoise 3px solid;
+  border: color(turq) 3px solid;
 }
 // Slide-to-right
 @mixin slide-to-right {
@@ -45,5 +45,19 @@
 }
 // Jump
 @mixin jump {
-  animation: jump 1s ease-in infinite alternate;
+  animation: jump 2s ease-in infinite alternate;
+}
+@mixin color($color) {
+  @if map-has-key($colors, $color) {
+    color: map-get($colors, $color);
+  } @else {
+    @error "Color #{$color} is not defined, Enter a valid #{colors}";
+  }
+}
+@mixin bg-color($color) {
+  @if map-has-key($colors, $color) {
+    background-color: map-get($colors, $color);
+  } @else {
+    @error "Color #{$color} is not defined, Enter a valid #{colors}";
+  }
 }

@@ -1,7 +1,7 @@
 // First box style
 .primary {
   font-family: $lobster;
-  color: $beige;
+  @include color(bei);
   margin-bottom: 1rem;
   @include centering;
   @include box-size;
