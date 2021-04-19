@@ -21,16 +21,43 @@
   justify-content: center;
   align-items: center;
 }
+// Colors
+@mixin color($color) {
+  @if map-has-key($colors, $color) {
+    color: map-get($colors, $color);
+  } @else {
+    @error "Color #{$color} is not defined, Enter a valid #{colors}";
+  }
+}
+@mixin bg-color($color) {
+  @if map-has-key($colors, $color) {
+    background-color: map-get($colors, $color);
+  } @else {
+    @error "Color #{$color} is not defined, Enter a valid #{colors}";
+  }
+}
+
 // Borders
+@mixin border-color($color) {
+  @if map-has-key($colors, $color) {
+    border-color: map-get($colors, $color);
+  } @else {
+    @error "Color #{$color} is not defined, Enter a valid #{colors}";
+  }
+}
 @mixin first-b-template {
-  border: $colors(y-green) 1px solid;
+  @include border-color(y-green);
+  border: 1px solid;
 }
 @mixin second-b-template {
-  border: color(smoke) 2px solid;
+  @include border-color(y-green);
+  border: 2px solid;
 }
 @mixin third-b-template {
-  border: color(turq) 3px solid;
+  @include border-color(sil);
+  border: 3px solid;
 }
+
 // Slide-to-right
 @mixin slide-to-right {
   animation: slide-to-right 5s ease-in-out infinite alternate both;
@@ -46,18 +73,4 @@
 // Jump
 @mixin jump {
   animation: jump 2s ease-in infinite alternate;
-}
-@mixin color($color) {
-  @if map-has-key($colors, $color) {
-    color: map-get($colors, $color);
-  } @else {
-    @error "Color #{$color} is not defined, Enter a valid #{colors}";
-  }
-}
-@mixin bg-color($color) {
-  @if map-has-key($colors, $color) {
-    background-color: map-get($colors, $color);
-  } @else {
-    @error "Color #{$color} is not defined, Enter a valid #{colors}";
-  }
 }
