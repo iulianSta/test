@@ -4,6 +4,8 @@
   color: $beige;
   margin-bottom: 1rem;
   @include centering;
+  @include box-size;
+  @include first-b-template;
   border-radius: 10px;
   @include slide-to-right;
   transition: 0.5s;

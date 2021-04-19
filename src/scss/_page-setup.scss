@@ -6,8 +6,3 @@
 body {
   background-color: $purple;
 }
-.primary,
-.secondary {
-  @include box-size;
-  border: $y-green 1px solid;
-}

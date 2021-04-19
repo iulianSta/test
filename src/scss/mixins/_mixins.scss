@@ -21,6 +21,16 @@
   justify-content: center;
   align-items: center;
 }
+// Borders
+@mixin first-b-template {
+  border: $y-green 1px solid;
+}
+@mixin second-b-template {
+  border: $smoke 2px solid;
+}
+@mixin third-b-template {
+  border: $turquoise 3px solid;
+}
 // Slide-to-right
 @mixin slide-to-right {
   animation: slide-to-right 5s ease-in-out infinite alternate both;

@@ -1,9 +1,11 @@
 // Second box style
 .secondary {
   font-family: $verdana;
+  @include box-size;
+  @include first-b-template;
   div {
     @include div-size;
-    border: $smoke 2px solid;
+    @include second-b-template;
     border-radius: 50%;
     @include slide-around;
   }

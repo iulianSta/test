@@ -1,0 +1,11 @@
+.ball {
+  margin-top: 2em;
+  font-size: 1.5em;
+  @include box-size;
+  @include centering;
+  @include third-b-template;
+  color: $silver;
+  border-radius: 100%;
+  position: relative;
+  left: 40vw;
+}
