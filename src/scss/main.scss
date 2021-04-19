@@ -1,16 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
 @import "./var/variables";
+@import "./mixins/mixins";
+@import "./animations/animation";
 @import "./page-setup";
+@import "./page-title";
 
-body {
-  background-color: purple;
-}
-h1 {
-  font-family: $lobster;
-  font-size: 5rem;
-  color: $smoke;
-  text-align: center;
-}
 .primary,
 .secondary {
   width: 10rem;
@@ -44,7 +38,7 @@ h1 {
   }
 }
 .secondary {
-  font-family: var(--verdana);
+  font-family: $verdana;
   div {
     width: 5rem;
     height: 5rem;
