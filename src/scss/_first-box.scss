@@ -1,0 +1,9 @@
+.primary {
+  font-family: $lobster;
+  color: $beige;
+  margin-bottom: 1rem;
+  @include centering;
+  border-radius: 10px;
+  @include slide-to-right;
+  transition: 0.5s;
+}

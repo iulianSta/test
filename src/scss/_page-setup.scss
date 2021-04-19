@@ -1,10 +1,13 @@
 // All elements style
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+  @include main-setup;
 }
 // Body style
 body {
   background-color: $purple;
+}
+.primary,
+.secondary {
+  @include box-size;
+  border: $y-green 1px solid;
 }

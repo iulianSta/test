@@ -1,0 +1,17 @@
+@mixin main-setup {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+@mixin box-size {
+  width: 10rem;
+  height: 10rem;
+}
+@mixin centering {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@mixin slide-to-right {
+  animation: slide-to-right 5s ease-in-out infinite alternate both;
+}

@@ -4,39 +4,8 @@
 @import "./animations/animation";
 @import "./page-setup";
 @import "./page-title";
+@import "./first-box";
 
-.primary,
-.secondary {
-  width: 10rem;
-  height: 10rem;
-  border: $y-green 1px solid;
-}
-.primary {
-  font-family: $lobster;
-  color: $beige;
-  margin-bottom: 1rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 10px;
-  animation: slide-to-right 5s ease-in-out infinite alternate both;
-  transition: 0.5s;
-}
-@keyframes slide-to-right {
-  0% {
-    transform: translateX(0);
-  }
-  50% {
-    color: $turquoise;
-    font-size: 2.5rem;
-    border-radius: 50%;
-  }
-  100% {
-    color: $silver;
-    font-size: 2rem;
-    transform: translateX(91.6vw);
-  }
-}
 .secondary {
   font-family: $verdana;
   div {

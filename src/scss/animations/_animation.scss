@@ -1,0 +1,15 @@
+@keyframes slide-to-right {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    color: $turquoise;
+    font-size: 2.5rem;
+    border-radius: 50%;
+  }
+  100% {
+    color: $silver;
+    font-size: 2rem;
+    transform: translateX(91.6vw);
+  }
+}
