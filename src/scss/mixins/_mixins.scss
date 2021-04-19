@@ -43,3 +43,7 @@
 @mixin slide-r-l {
   animation: slide-right-left 5s ease-in-out infinite alternate;
 }
+// Jump
+@mixin jump {
+  animation: jump 1s ease-in infinite alternate;
+}

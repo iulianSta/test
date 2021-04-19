@@ -41,3 +41,12 @@
     transform: translateX(80vw);
   }
 }
+// Jump
+@keyframes jump {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-30vh);
+  }
+}
