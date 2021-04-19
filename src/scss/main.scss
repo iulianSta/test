@@ -1,8 +1,16 @@
+// Import Google Fonts
 @import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
+// Import Variables
 @import "./var/variables";
+// Import Mixins
 @import "./mixins/mixins";
+// Import Animations
 @import "./animations/animation";
+// Page setup
 @import "./page-setup";
+// Page title
 @import "./page-title";
+// first box
 @import "./first-box";
+// Second box
 @import "./second-box";
