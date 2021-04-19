@@ -26,35 +26,35 @@
   @if map-has-key($colors, $color) {
     color: map-get($colors, $color);
   } @else {
-    @error "Color #{$color} is not defined, Enter a valid #{colors}";
+    @error "Color #{$color} is not defined, Enter a valid #{color}";
   }
 }
 @mixin bg-color($color) {
   @if map-has-key($colors, $color) {
     background-color: map-get($colors, $color);
   } @else {
-    @error "Color #{$color} is not defined, Enter a valid #{colors}";
+    @error "Color #{$color} is not defined, Enter a valid #{color}";
   }
 }
 
 // Borders
-@mixin border-color($color) {
+@mixin bord-color($color) {
   @if map-has-key($colors, $color) {
     border-color: map-get($colors, $color);
   } @else {
-    @error "Color #{$color} is not defined, Enter a valid #{colors}";
+    @error "Color #{$color} is not defined, Enter a valid #{color}";
   }
 }
 @mixin first-b-template {
-  @include border-color(y-green);
-  border: 1px solid;
+  @include bord-color(y-green);
+  border: 2px solid;
 }
 @mixin second-b-template {
-  @include border-color(y-green);
+  @include bord-color(y-green);
   border: 2px solid;
 }
 @mixin third-b-template {
-  @include border-color(sil);
+  @include bord-color(sil);
   border: 3px solid;
 }
 

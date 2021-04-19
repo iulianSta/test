@@ -3,6 +3,7 @@
   font-family: $verdana;
   @include box-size;
   @include first-b-template;
+  @include color(y-green);
   div {
     @include div-size;
     @include second-b-template;
