@@ -5,41 +5,4 @@
 @import "./page-setup";
 @import "./page-title";
 @import "./first-box";
-
-.secondary {
-  font-family: $verdana;
-  div {
-    width: 5rem;
-    height: 5rem;
-    border: $smoke 2px solid;
-    border-radius: 50%;
-    animation: slide-around 5s ease-in-out infinite alternate;
-  }
-  border-radius: 1rem;
-  animation: slide-right-left 5s ease-in-out infinite alternate;
-}
-@keyframes slide-around {
-  0% {
-    transform: translateX(0);
-  }
-  25% {
-    transform: translateX(4vw);
-  }
-  50% {
-    transform: translateY(7.5vh);
-  }
-  75% {
-    transform: translateX(2vw);
-  }
-  100% {
-    transform: translateZ(5rem);
-  }
-}
-@keyframes slide-right-left {
-  0% {
-    transform: translateX(20vw);
-  }
-  100% {
-    transform: translateX(80vw);
-  }
-}
+@import "./second-box";

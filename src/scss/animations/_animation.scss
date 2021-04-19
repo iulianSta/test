@@ -1,3 +1,4 @@
+// Slide to right animation
 @keyframes slide-to-right {
   0% {
     transform: translateX(0);
@@ -11,5 +12,32 @@
     color: $silver;
     font-size: 2rem;
     transform: translateX(91.6vw);
+  }
+}
+// Slide around animation
+@keyframes slide-around {
+  0% {
+    transform: translateX(0);
+  }
+  25% {
+    transform: translateX(4vw);
+  }
+  50% {
+    transform: translateY(7.5vh);
+  }
+  75% {
+    transform: translateX(2vw);
+  }
+  100% {
+    transform: translateZ(5rem);
+  }
+}
+// Slide right-left animation
+@keyframes slide-right-left {
+  0% {
+    transform: translateX(20vw);
+  }
+  100% {
+    transform: translateX(80vw);
   }
 }

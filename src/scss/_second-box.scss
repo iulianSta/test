@@ -1,0 +1,11 @@
+.secondary {
+  font-family: $verdana;
+  div {
+    @include div-size;
+    border: $smoke 2px solid;
+    border-radius: 50%;
+    @include slide-around;
+  }
+  border-radius: 1rem;
+  @include slide-r-l;
+}
