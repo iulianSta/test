@@ -1,40 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-body {
-  background-color: purple;
-}
-
-h1 {
-  font-family: "Lobster", "cursive", sans-serif;
-  font-size: 5rem;
-  color: whitesmoke;
-  text-align: center;
-}
-
-.primary,
-.secondary {
-  width: 10rem;
-  height: 10rem;
-  border: yellowgreen 1px solid;
-}
-
-.primary {
-  font-family: "Lobster", "cursive", sans-serif;
-  color: beige;
-  margin-bottom: 1rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 10px;
-  animation: slide-to-right 5s ease-in-out infinite alternate both;
-  transition: 0.5s;
-}
-
 @keyframes slide-to-right {
   0% {
     transform: translateX(0);
@@ -50,6 +14,42 @@ h1 {
     transform: translateX(91.6vw);
   }
 }
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: purple;
+}
+
+.primary,
+.secondary {
+  width: 10rem;
+  height: 10rem;
+  border: yellowgreen 1px solid;
+}
+
+h1 {
+  font-family: "Lobster", "cursive", sans-serif;
+  font-size: 5rem;
+  color: whitesmoke;
+  text-align: center;
+}
+
+.primary {
+  font-family: "Lobster", "cursive", sans-serif;
+  color: beige;
+  margin-bottom: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  animation: slide-to-right 5s ease-in-out infinite alternate both;
+  transition: 0.5s;
+}
+
 .secondary {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   border-radius: 1rem;
